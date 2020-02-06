@@ -12,8 +12,8 @@ public class UserController {
     UserRepository userRepository;
 
     @PostMapping("register")
-    public String saveUser(@RequestBody User user){
+    public void saveUser(@RequestBody User user){
         userRepository.save(user);
-        return "Success";
+
     }
 }
