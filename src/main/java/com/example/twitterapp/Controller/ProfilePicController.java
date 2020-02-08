@@ -40,7 +40,7 @@ public class ProfilePicController {
 
     @GetMapping(value="getPicture",produces = MediaType.IMAGE_JPEG_VALUE)
     public byte[] getPicture(@RequestParam("name") String username)throws IOException{
-        File file=new File("C:\\Users\\Home\\Documents\\Twitter App\\PofilePics\\"+username+".jpg");
+        File file=new File("C:\\Users\\Home\\Documents\\Twitter App\\PofilePics\\amal.jpg");
         byte[] bytesArray = new byte[(int) file.length()];
         FileInputStream fis = new FileInputStream(file);
         fis.read(bytesArray);
